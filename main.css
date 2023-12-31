@@ -1,0 +1,47 @@
+.cards-wrapper {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 23%;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #ff00cc, #3333cc);
+    border-image-slice: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    color: white;
+    transition: transform 0.3s ease; /* Added transition property */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+body {
+    background-color: #222;
+    text-align: center;
+}
+
+button {
+    margin: auto;
+    background-color: #3333cc;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #3333cc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff00cc;
+}
+
+.txt {
+    max-height: 79.5%;
+}
