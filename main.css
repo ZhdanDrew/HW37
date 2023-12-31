@@ -4,6 +4,7 @@
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -14,11 +15,19 @@
     padding: 10px;
     box-sizing: border-box;
     color: white;
-    transition: transform 0.3s ease; /* Added transition property */
+    transition: transform 0.3s ease; 
+    overflow: hidden; 
+    min-width: 200px;
+    margin-top: 15px;
+}
+
+.card img {
+    width: 100%; 
+    height: auto; 
 }
 
 .card:hover {
-    transform: scale(1.05); /* Scale up on hover */
+    transform: scale(1.05); 
 }
 
 body {
